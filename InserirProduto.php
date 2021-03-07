@@ -1,12 +1,10 @@
 <?php
 include "conexaoBanco.php";
-
     $nroproduto = $_POST['nroProduto'];
     $nomeproduto = $_POST['nomeProduto'];
     $categoria = $_POST['categoria'];
     $quantidade = $_POST['quantidade'];
     $fornecedor = $_POST['fornecedor'];
-
         mysqli_query($link, "insert into estoque (nroProduto, nomeProduto, categoria, quantidade, fornecedor) values ('$nroproduto', '$nomeproduto', '$categoria', '$quantidade', '$fornecedor')");
 ?>
 <link rel="stylesheet" href="./css/bootstrap.css">
@@ -20,3 +18,4 @@ include "conexaoBanco.php";
         </center>
     </div>
 </div>
+<th scope="col">Nro Produto</th>
