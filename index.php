@@ -1,69 +1,48 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Formulário de cadastro</title>
-    <style type="text/css">
-        #containerFormulario {
-            width: 500px;
-            margin-top: 40px;
-        }
-
-        #btn-cadastrar {
-            background-color: #FF1168;
-            color: #FFFFFF;
-        }
-    </style>
-</head>
 <link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 
-<body>
-    <div class="container" id="containerFormulario">
-        <h4>Formulario de cadastro de produtos</h4>
-        <form action="./InserirProduto.php" method="POST" style="margin-top: 20px">
-            <div class="form-group">
-                <label class="mt-1 mb-1">NRO produto</label>
-                <input type="number" class="form-control" name="nroProduto" placeholder="Insira o número do produto">
-            </div>
-            <div class="form-group">
-                <label class="mt-1 mb-1 ">Nome do produto</label>
-                <input type="text" class="form-control" name="nomeProduto" placeholder="Insira o nome">
-            </div>
 
-            <label class="mt-1 mb-1">Categoria</label>
-            <br>
-            <div class="form-group">
-                <select class="form-control" name="categoria">
-                    <option selected>Categoria do produto</option>
-                    <option value="1">Periferico</option>
-                    <option value="2">Hardware</option>
-                    <option value="3">Software</option>
-                    <option value="4">Celulares</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label class="mt-1 mb-1">Quantidade</label>
-                <input type="number" class="form-control" name="quantidade" placeholder="Insira a quantidade do produto">
-            </div>
-            <label class="mt-1 mb-1">Fornecedor</label>
-            <br>
-            <div class="form-group">
-                <select class="form-control" name="fornecedor">
-                    <option selected>Fornecedor</option>
-                    <option value="1">Login</option>
-                    <option value="2">Solutis</option>
-                    <option value="3">SEC</option>
-                </select>
-            </div>
-            <br>
-            <div style="text-align: right;">
-                <button type="submit" id="btn-cadastrar" class="btn btn-sm">Cadastrar</button>
-            </div>
-        </form>
-
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+  <a class="navbar-brand" href="https://github.com/lulcas174"><i class="fab fa-github"></i></a> 
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="https://twitter.com/tlulcas"><i class="fab fa-twitter-square"></i></a>
+        <a class="nav-link" href="https://www.linkedin.com/in/lucas-l-8b694a164/"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
-
+  </div>
+</nav>
+    </div>
+</head>
+<body>
+<div class="container" style="margin-top: 100px">
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Adicionar Produto</h5>
+        <p class="card-text">Click aqui para poder adicionar os produtos no estoque</p>
+        <a href="./adicionarProduto.php" class="btn btn-primary">Adicionar</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Lista de produtos</h5>
+        <p class="card-text">Click aqui para editar os produtos ou excluir os produtos</p>
+        <a href="./listarProdutos.php" class="btn btn-primary">Editar</a>
+      </div>
+    </div>
+  </div>
+</div></div>
     <script src="./js/bootstrap.js"></script>
 </body>
-
 </html>

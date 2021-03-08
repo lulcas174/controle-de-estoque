@@ -45,7 +45,10 @@
                 </tr>
                 <?php } ?>
         </table>
-
+        <div style="text-align:right">
+        <a href="index.php" type="submit" class="btn btn-success btn-sm">Voltar</a>
+        </div>
+    </div>
         <script src="./js/bootstrap.js"></script>
 </body>
 
