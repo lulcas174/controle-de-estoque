@@ -17,7 +17,7 @@
                     <th scope="col">Categoria</th>
                     <th scope="col">Quantidade</th>
                     <th scope="col">Fornecedor</th>
-                    <th scope="col">ação </th>
+                    <th scope="col">ação</th>
                 </tr>
             </thead>
                 <?php
@@ -39,7 +39,9 @@
                 <td><?php echo $Acategoria ?></td>
                 <td><?php echo $Aquantidade ?></td>
                 <td><?php echo $Afornecedor ?></td>
-                <td><a class="btn btn-danger btn-sm" style="color:black" href="EditarProduto.php?id=<?php echo $Aid_estoque?>" role="button">Editar</a></td>
+                <td><a class="btn btn-warning btn-sm" style="color:black" href="EditarProduto.php?id=<?php echo $Aid_estoque?>" role="button">Editar</a>
+                <a class="btn btn-danger btn-sm" style="color:black" href="deletarProduto.php?id=<?php echo $Aid_estoque?>" role="button">Excluir</a>
+                </td>
                 </tr>
                 <?php } ?>
         </table>
